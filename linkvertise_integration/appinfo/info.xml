@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>linkvertise_integration</id>
+    <name>Linkvertise Integration</name>
+    <summary>Monetarisiere öffentliche Freigabelinks automatisch über Linkvertise</summary>
+    <description><![CDATA[Erstellt aus der Dateiansicht heraus mit einem Klick einen öffentlichen Freigabelink
+für eine Datei und wandelt ihn über die Linkvertise-API in einen monetarisierten Link um.
+Der API-Schlüssel und weitere Einstellungen werden zentral im Admin-Bereich konfiguriert.]]></description>
+    <version>1.0.0</version>
+    <licence>agpl</licence>
+    <author mail="info@xumari-modz.com">Linkvertise Integration Contributors</author>
+    <namespace>LinkvertiseIntegration</namespace>
+    <category>files</category>
+    <website>https://github.com/yourname/linkvertise_integration</website>
+    <bugs>https://github.com/yourname/linkvertise_integration/issues</bugs>
+    <repository>https://github.com/yourname/linkvertise_integration</repository>
+    <screenshot>https://raw.githubusercontent.com/yourname/linkvertise_integration/main/screenshots/settings.png</screenshot>
+    <dependencies>
+        <nextcloud min-version="27" max-version="30"/>
+    </dependencies>
+    <settings>
+        <admin>OCA\LinkvertiseIntegration\Settings\Admin</admin>
+        <admin-section>OCA\LinkvertiseIntegration\Settings\AdminSection</admin-section>
+    </settings>
+</info>
